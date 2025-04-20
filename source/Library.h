@@ -16,8 +16,13 @@ public:
     void addBook(std::shared_ptr<Book> book);
     void removeBook(std::shared_ptr<Book> book);
     void printBooks();
+
+    std::weak_ptr<Book> findBookByTitle(const std::string& request);
+    std::vector<std::weak_ptr<Book>> findBooksByAuthor(const std::string& request);
 };
 
-void CreateBooksAndPrint(const int& amount);
+void createBooksAndPrint(const int& amount);
+void findBookByTitleAndPrint(Library& library, const std::string& book_title);
+void findBooksByAuthorAndPrint(Library& library, const std::string& book_author);
 
 #endif //LIBRARY_H
