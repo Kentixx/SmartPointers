@@ -5,10 +5,12 @@
 #include <memory>
 #include <vector>
 #include "Book.h"
+#include "User.h"
 
 class Library {
 private:
     std::vector<std::shared_ptr<Book>> books_list;
+    std::vector<std::shared_ptr<User>> users_list;
 public:
     Library() {};
     Library(std::vector<std::shared_ptr<Book>> _books_list) : books_list(_books_list) {};
@@ -19,6 +21,9 @@ public:
 
     std::weak_ptr<Book> findBookByTitle(const std::string& request);
     std::vector<std::weak_ptr<Book>> findBooksByAuthor(const std::string& request);
+
+    void createUser(const std::string username);
+    void deleteUser(const std::string username);
 };
 
 void createBooksAndPrint(const int& amount);

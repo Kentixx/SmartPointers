@@ -73,3 +73,16 @@ void findBooksByAuthorAndPrint(Library& library, const std::string& book_author)
         std::cout << "No books found written by that author" << std::endl;
     }
 }
+
+void Library::createUser(const std::string username) {
+    std::shared_ptr<User> user = std::make_shared<User>(username);
+    users_list.emplace_back(user);
+}
+
+void Library::deleteUser(const std::string username) {
+    if (std::find(users_list.begin, users_list.end, username) == NULL) {
+        return;
+    }
+    auto pos = std::find(users_list.begin, users_list.end, username);
+    users_list.erase(users_list.cbegin + pos);
+}
