@@ -4,6 +4,7 @@
 #include <iostream>
 #include <memory>
 #include <vector>
+#include <algorithm>
 #include "Book.h"
 #include "User.h"
 
@@ -22,12 +23,14 @@ public:
     std::weak_ptr<Book> findBookByTitle(const std::string& request);
     std::vector<std::weak_ptr<Book>> findBooksByAuthor(const std::string& request);
 
-    void createUser(const std::string username);
-    void deleteUser(const std::string username);
+    void createUser(const std::string& username);
+    void deleteUser(const std::string& username);
+    bool issueBook(const std::string& title, int ID);
+    void printUsers() const;
 };
 
 void createBooksAndPrint(const int& amount);
 void findBookByTitleAndPrint(Library& library, const std::string& book_title);
 void findBooksByAuthorAndPrint(Library& library, const std::string& book_author);
-
+void demonstrateLibraryFunctions(Library& library);
 #endif //LIBRARY_H

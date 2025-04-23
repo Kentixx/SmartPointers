@@ -25,6 +25,9 @@ add_executable(SmartPointers
         main.cpp
         mainwindow.cpp
         mainwindow.ui
+        source/Library.cpp
+        source/Book.cpp
+        source/User.cpp
 )
 
 target_link_libraries(SmartPointers PRIVATE Qt6Core Qt6Gui Qt6Widgets)

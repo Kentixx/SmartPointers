@@ -1,0 +1,18 @@
+# ninja log v6
+24	3944	7671223057065344	SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+24	3944	7671223057065344	SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+24	3944	7671223057065344	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+24	3944	7671223057065344	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+4544	8510	7671223067258613	CMakeFiles/SmartPointers.dir/source/Book.cpp.obj	1161bcfb2f238ef8
+4437	8947	7671223066190134	CMakeFiles/SmartPointers.dir/source/Library.cpp.obj	c45f07bd8689c588
+4714	9155	7671223068954408	CMakeFiles/SmartPointers.dir/source/User.cpp.obj	4e58427efcef2b11
+3956	10091	7671223061385296	CMakeFiles/SmartPointers.dir/SmartPointers_autogen/mocs_compilation.cpp.obj	572bf7a2763ee2ed
+4091	10473	7671223062735667	CMakeFiles/SmartPointers.dir/main.cpp.obj	3db79c0b6ecc5c9e
+4211	11086	7671223063925940	CMakeFiles/SmartPointers.dir/mainwindow.cpp.obj	7bdd6f3bb7f18a14
+11086	13381	7671223132688831	SmartPointers.exe	7633612bcf45b2d0
+62	1496	7671225496786053	SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+62	1496	7671225496786053	SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+62	1496	7671225496786053	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+62	1496	7671225496786053	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+1498	4274	7671225511140018	CMakeFiles/SmartPointers.dir/source/Library.cpp.obj	c45f07bd8689c588
+4274	6386	7671225538896416	SmartPointers.exe	7633612bcf45b2d0

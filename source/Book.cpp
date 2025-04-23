@@ -1,6 +1,16 @@
 #include "Book.h"
 
-Book::~Book() {}
+std::string Book::getTitle() const {
+  	return title;
+}
+
+std::string Book::getAuthor() const {
+  	return author;
+}
+
+int Book::getYear() const {
+  	return year;
+}
 
 void printBookInfo(const std::unique_ptr<Book>& book) {
     if (book) {
