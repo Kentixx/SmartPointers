@@ -434,10 +434,10 @@ D:/Programs/Qt/SmartPointers/mainwindow.h
  mdp:D:/Programs/Qt/SmartPointers/ui_mainwindow.h
  uic:ui_mainwindow.h
 D:/Programs/Qt/SmartPointers/source/Book.h
-D:/Programs/Qt/SmartPointers/source/Library.h
 D:/Programs/Qt/SmartPointers/source/User.h
-D:/Programs/Qt/SmartPointers/main.cpp
+D:/Programs/Qt/SmartPointers/source/Library.h
 D:/Programs/Qt/SmartPointers/mainwindow.cpp
+D:/Programs/Qt/SmartPointers/main.cpp
 D:/Programs/Qt/SmartPointers/source/Book.cpp
 D:/Programs/Qt/SmartPointers/source/Library.cpp
 D:/Programs/Qt/SmartPointers/source/User.cpp

@@ -78,6 +78,10 @@ void Library::createUser(const std::string& username) {
     users_list.emplace_back(user);
 }
 
+void Library::createUser(std::shared_ptr<User> user) {
+    users_list.emplace_back(user);
+}
+
 void Library::deleteUser(const std::string& username) {
     auto pos = std::remove_if(users_list.begin(), users_list.end(),
         [&username](const std::shared_ptr<User>& user) {
@@ -119,14 +123,22 @@ void Library::printUsers() const {
 }
 
 void demonstrateLibraryFunctions(Library& library) {
-    library.addBook(std::make_shared<Book>("1984", "George Orwell", 1949));
-    library.addBook(std::make_shared<Book>("Animal Farm", "George Orwell", 1945));
-    library.addBook(std::make_shared<Book>("Brave New World", "Aldous Huxley", 1932));
-    library.addBook(std::make_shared<Book>("Fahrenheit 451", "Ray Bradbury", 1953));
+    auto book1 = std::make_shared<Book>("1984", "George Orwell", 1949);
+    auto book2 = std::make_shared<Book>("Animal Farm", "George Orwell", 1945);
+    auto book3 = std::make_shared<Book>("Brave New World", "Aldous Huxley", 1932);
+    auto book4 = std::make_shared<Book>("Fahrenheit 451", "Ray Bradbury", 1953);
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+    library.addBook(book4);
 
-    library.createUser("Dan");
-    library.createUser("Nastya");
-    library.createUser("Ivan");
+    auto user1 = std::allocate_shared<User>(std::allocator<User>(), "Dan");
+    auto user2 = std::allocate_shared<User>(std::allocator<User>(), "Nastya");
+    auto user3 = std::allocate_shared<User>(std::allocator<User>(), "Ivan");
+
+    library.createUser(user1);
+    library.createUser(user2);
+    library.createUser(user3);
 
     std::cout << "Available books in the library:" << std::endl;
     library.printBooks();
@@ -148,3 +160,4 @@ void demonstrateLibraryFunctions(Library& library) {
     std::cout << "Users after issuing books:" << std::endl;
     library.printUsers();
 }
+

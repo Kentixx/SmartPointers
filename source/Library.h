@@ -24,6 +24,7 @@ public:
     std::vector<std::weak_ptr<Book>> findBooksByAuthor(const std::string& request);
 
     void createUser(const std::string& username);
+    void createUser(std::shared_ptr<User> user);
     void deleteUser(const std::string& username);
     bool issueBook(const std::string& title, int ID);
     void printUsers() const;
@@ -33,4 +34,5 @@ void createBooksAndPrint(const int& amount);
 void findBookByTitleAndPrint(Library& library, const std::string& book_title);
 void findBooksByAuthorAndPrint(Library& library, const std::string& book_author);
 void demonstrateLibraryFunctions(Library& library);
+
 #endif //LIBRARY_H
