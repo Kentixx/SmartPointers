@@ -1,13 +1,13 @@
 #include <QApplication>
 #include <QPushButton>
-#include "source/Library.h"
+#include "classes/Library.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[]) {
     Library lib;
     demonstrateLibraryFunctions(lib);
-    /*QApplication a(argc, argv);
-    QPushButton button("Hello world!", nullptr);
-    button.resize(200, 100);
-    button.show();
-    return QApplication::exec();*/
+    QApplication a(argc, argv);
+    MainWindow window;
+    window.show();
+    return QApplication::exec();
 }
