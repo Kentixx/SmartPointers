@@ -28,12 +28,10 @@ add_executable(SmartPointers
         classes/Library.cpp
         classes/Book.cpp
         classes/User.cpp
-        source/bookdialog.h
         source/bookdialog.cpp
-        source/BookModel.h
         source/BookModel.cpp
         source/UserModel.cpp
-        source/UserModel.h
+        InfoWindow.cpp
 )
 
 target_link_libraries(SmartPointers PRIVATE Qt6Core Qt6Gui Qt6Widgets)

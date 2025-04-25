@@ -156,23 +156,23 @@
     </item>
    </layout>
   </widget>
-  <widget class="QTableWidget" name="BookTable">
+  <widget class="QTableView" name="BookTable">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>70</y>
      <width>321</width>
-     <height>331</height>
+     <height>321</height>
     </rect>
    </property>
   </widget>
-  <widget class="QTableWidget" name="UserTable">
+  <widget class="QTableView" name="UserTable">
    <property name="geometry">
     <rect>
      <x>350</x>
      <y>70</y>
      <width>331</width>
-     <height>331</height>
+     <height>321</height>
     </rect>
    </property>
   </widget>

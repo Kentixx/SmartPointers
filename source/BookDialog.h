@@ -5,7 +5,7 @@
 #include <memory>
 #include <QLabel>
 #include <QVBoxLayout>
-#include "Book.h"
+#include "../classes/Book.h"
 
 class BookDialog : public QDialog {
     Q_OBJECT

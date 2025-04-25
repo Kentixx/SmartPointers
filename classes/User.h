@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <QVector>
 #include <memory>
 #include "Book.h"
 
@@ -14,12 +15,13 @@ private:
     std::string name;
     long id;
 public:
-    std::vector<std::shared_ptr<Book>> issuedBooks;
+    QVector<std::shared_ptr<Book>> issuedBooks;
+
     User() {};
     User(const std::string& _name) : name(_name), id(++ID) {};
-
     std::string getName() const;
     long getID() const;
+    void removeBook(std::shared_ptr<Book> book);
 };
 
 #endif //USER_H

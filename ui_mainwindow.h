@@ -15,7 +15,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -33,8 +33,8 @@ public:
     QPushButton *deleteUser;
     QPushButton *createUser;
     QPushButton *findBookByAuthor;
-    QTableWidget *BookTable;
-    QTableWidget *UserTable;
+    QTableView *BookTable;
+    QTableView *UserTable;
 
     void setupUi(QWidget *MainWindow)
     {
@@ -43,7 +43,7 @@ public:
         MainWindow->resize(700, 600);
         LibraryLabel = new QLabel(MainWindow);
         LibraryLabel->setObjectName("LibraryLabel");
-        LibraryLabel->setGeometry(QRect(50, 20, 291, 41));
+        LibraryLabel->setGeometry(QRect(20, 20, 321, 41));
         QFont font;
         font.setFamilies({QString::fromUtf8("Bookman Old Style")});
         font.setPointSize(15);
@@ -53,7 +53,7 @@ public:
         LibraryLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         UserLabel = new QLabel(MainWindow);
         UserLabel->setObjectName("UserLabel");
-        UserLabel->setGeometry(QRect(350, 20, 291, 41));
+        UserLabel->setGeometry(QRect(350, 20, 331, 41));
         UserLabel->setFont(font);
         UserLabel->setAlignment(Qt::AlignmentFlag::AlignCenter);
         gridLayoutWidget = new QWidget(MainWindow);
@@ -104,12 +104,12 @@ public:
 
         gridLayout->addWidget(findBookByAuthor, 3, 0, 1, 1);
 
-        BookTable = new QTableWidget(MainWindow);
+        BookTable = new QTableView(MainWindow);
         BookTable->setObjectName("BookTable");
-        BookTable->setGeometry(QRect(50, 70, 291, 331));
-        UserTable = new QTableWidget(MainWindow);
+        BookTable->setGeometry(QRect(20, 70, 321, 321));
+        UserTable = new QTableView(MainWindow);
         UserTable->setObjectName("UserTable");
-        UserTable->setGeometry(QRect(350, 70, 291, 331));
+        UserTable->setGeometry(QRect(350, 70, 331, 321));
 
         retranslateUi(MainWindow);
 

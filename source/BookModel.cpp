@@ -5,7 +5,7 @@ int BookModel::rowCount(const QModelIndex &parent) const {
     return books.size();
 }
 
-int columnCount(const QModelIndex &parent) {
+int BookModel::columnCount(const QModelIndex &parent) const {
     return 3;
 }
 
@@ -15,7 +15,7 @@ void BookModel::setBooks(const QVector<std::shared_ptr<Book>> &books) {
     endResetModel();
 }
 
-QVariant BookModel::data(const QModelIndex &index, int role) const override {
+QVariant BookModel::data(const QModelIndex &index, int role) const {
     if (role == Qt::DisplayRole) {
         const auto &book = books.at(index.row());
         switch (index.column()) {

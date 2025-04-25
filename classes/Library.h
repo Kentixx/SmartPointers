@@ -26,6 +26,7 @@ public:
     void createUser(const std::string& username);
     void createUser(std::shared_ptr<User> user);
     void deleteUser(const std::string& username);
+    void deleteUser(std::shared_ptr<User> user);
     bool issueBook(const std::string& title, int ID);
     void printUsers() const;
 };

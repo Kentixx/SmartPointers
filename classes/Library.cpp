@@ -5,6 +5,12 @@ void Library::addBook(std::shared_ptr<Book> book) {
 }
 
 void Library::removeBook(std::shared_ptr<Book> book) {
+    for (const auto& user : users_list) {
+        auto booksIter = std::find(user->issuedBooks.begin(), user->issuedBooks.end(), book);
+        if (booksIter != user->issuedBooks.end()) {
+            user->issuedBooks.erase(booksIter);
+        }
+    }
     auto pos = std::find(books_list.begin(), books_list.end(), book);
     if (pos != books_list.end()) {
         books_list.erase(pos);
@@ -82,13 +88,21 @@ void Library::createUser(std::shared_ptr<User> user) {
     users_list.emplace_back(user);
 }
 
-void Library::deleteUser(const std::string& username) {
-    auto pos = std::remove_if(users_list.begin(), users_list.end(),
+/* void Library::deleteUser(const std::string& username) {
+    auto pos = std::find_if(users_list.begin(), users_list.end(),
         [&username](const std::shared_ptr<User>& user) {
             return user->getName() == username;
         });
-    if (pos != users_list.end()) {
-        users_list.erase(pos, users_list.end());
+    users_list.erase(pos);
+}*/
+
+void Library::deleteUser(std::shared_ptr<User> user) {
+    auto it = std::remove_if(users_list.begin(), users_list.end(),
+        [&user](const std::weak_ptr<User> &weakUser) {
+        return weakUser.lock() == user;
+    });
+    if (it != users_list.end()) {
+        users_list.erase(it, users_list.end());
     }
 }
 
