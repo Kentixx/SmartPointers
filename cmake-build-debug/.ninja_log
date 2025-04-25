@@ -1,0 +1,24 @@
+# ninja log v6
+89	1608	7673153749493234	SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+89	1608	7673153749493234	SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+89	1608	7673153749493234	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+89	1608	7673153749493234	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+5139	8946	7673078873179055	CMakeFiles/SmartPointers.dir/classes/Book.cpp.obj	379f9ddc8af4d2e0
+3754	8890	7673135613234680	CMakeFiles/SmartPointers.dir/classes/User.cpp.obj	883c3631f453ade6
+3638	9072	7673135612080118	CMakeFiles/SmartPointers.dir/classes/Library.cpp.obj	60cfd33c8da25bd4
+2917	10811	7673146217563536	CMakeFiles/SmartPointers.dir/SmartPointers_autogen/mocs_compilation.cpp.obj	572bf7a2763ee2ed
+3173	10792	7673146220128796	CMakeFiles/SmartPointers.dir/main.cpp.obj	3db79c0b6ecc5c9e
+1609	9676	7673153764692043	CMakeFiles/SmartPointers.dir/mainwindow.cpp.obj	7bdd6f3bb7f18a14
+5386	13043	7673078875651596	CMakeFiles/SmartPointers.dir/source/BookDialog.cpp.obj	76b56e16be91220c
+1431	5369	7673079445755761	CMakeFiles/SmartPointers.dir/source/BookModel.cpp.obj	cddf5f4ac3ace87b
+3865	11056	7673135614337238	CMakeFiles/SmartPointers.dir/source/UserModel.cpp.obj	58beff536c01c1ea
+1422	7273	7673147581534922	CMakeFiles/SmartPointers.dir/InfoWindow.cpp.obj	7c2f18b0cd1e556
+9676	13033	7673153845358180	SmartPointers.exe	eca5865dc35928e8
+46	3043	7673157393436164	SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+46	3043	7673157393436164	SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+46	3043	7673157393436164	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/timestamp	6f3ecbc9a78803f9
+46	3043	7673157393436164	D:/Programs/Qt/SmartPointers/cmake-build-debug/SmartPointers_autogen/mocs_compilation.cpp	6f3ecbc9a78803f9
+3045	10360	7673157396102626	CMakeFiles/SmartPointers.dir/SmartPointers_autogen/mocs_compilation.cpp.obj	572bf7a2763ee2ed
+3230	10404	7673157397959283	CMakeFiles/SmartPointers.dir/main.cpp.obj	3db79c0b6ecc5c9e
+3335	11637	7673157399005318	CMakeFiles/SmartPointers.dir/mainwindow.cpp.obj	7bdd6f3bb7f18a14
+11637	14583	7673157482030814	SmartPointers.exe	eca5865dc35928e8
